@@ -1,27 +1,3 @@
-
-// // Register Service Worker if it is supported
-// if ('serviceWorker' in navigator) {
-//   navigator.serviceWorker.register('./sw.js')
-//   .then(function (registration) {
-//     let sw;
-//     if (registration.installing) {
-//       sw = registration.installing;
-//       console.log("SW Installing");
-//     } else if (registration.waiting) {
-//       sw = registration.waiting;
-//       console.log("SW Waiting");
-//     } else if (registration.active) {
-//       sw = registration.active;
-//       console.log("SW Active");
-//     }
-//   })
-//   .catch(function (error) {
-//     console.log(error);
-//   })
-// } else {
-//   console.log("Current Browser Does Not Support Service Workers");
-// }
-
 // Cache parts of page for offline-first
 let currentCache = 'restaurantReviews-v1'
 self.addEventListener('install', function(e) {
