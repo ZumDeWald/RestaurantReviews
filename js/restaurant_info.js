@@ -197,3 +197,26 @@ getParameterByName = (name, url) => {
     return '';
   return decodeURIComponent(results[2].replace(/\+/g, ' '));
 }
+
+// Register Service Worker if it is supported
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js')
+  .then(function (registration) {
+    let sw;
+    if (registration.installing) {
+      sw = registration.installing;
+      console.log("SW Installing");
+    } else if (registration.waiting) {
+      sw = registration.waiting;
+      console.log("SW Waiting");
+    } else if (registration.active) {
+      sw = registration.active;
+      console.log("SW Active with scope" + registration.scope);
+    }
+  })
+  .catch(function (error) {
+    console.log(error);
+  })
+} else {
+  console.log("Current Browser Does Not Support Service Workers");
+}
