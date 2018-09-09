@@ -148,6 +148,10 @@ nav h1 a {
   padding: 30px 10px 60px;
 }
 #restaurants-list li {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-around;
+	align-items: flex-start;
   background-color: #fff;
   border: 2px solid #ccc;
   font-family: Arial,sans-serif;
