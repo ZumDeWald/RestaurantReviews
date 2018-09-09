@@ -2,6 +2,10 @@
 ---
 #### _Project submission for Udacity FEND course_
 
+## Overview
+
+This repo contains a web app that allows the user to sort through various restaurants and see reviews. _[All content has been generated just for this project and is not live]_
+
 ## How do I run this project?
 
 1. Download all files associated with this project
