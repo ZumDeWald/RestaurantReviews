@@ -268,7 +268,7 @@ nav h1 a {
 }
 #reviews-list li {
   background-color: #fff;
-    border: 2px solid #f3f3f3;
+	border: 2px solid #f3f3f3;
   display: block;
   list-style-type: none;
   margin: 0 0 30px;
@@ -282,4 +282,17 @@ nav h1 a {
 }
 #restaurant-hours td {
   color: #666;
+	font-size: 1.2rem;
+}
+.review-name {
+	padding: 0.5em 0 0.5em 0;
+	border-bottom: 2px solid #f3f3f3;
+	border-left: 2px solid #f3f3f3;
+	border-right: 2px solid #f3f3f3;
+	text-align: center;
+	line-height: 1.3rem;
+	font-size: 1.3rem;
+}
+.review-info {
+	font-size: 1.3em;
 }
